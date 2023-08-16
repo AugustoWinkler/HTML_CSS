@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    font-size: 3.5vh;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+section#conteudo{
+    box-shadow: inset 0px 0px 20px 2px black; 
+    
+}
+#conteudo>p{
+    font-size: 3.5vh;
+    width: 90vh;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: auto;
+
+}
+
+section#img01{
+    background-image: url(imagens/chessbackground.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#img01>p{
+    background-color: rgba(0, 0, 0, 0.568);
+    color: white;
+    font-size: 6vh;
+    padding: 10vh 20vh;
+    text-align: center;
+}
+
+
+footer{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
