@@ -8,7 +8,7 @@
 header{
     font-size: 3.5vh;
     background-color: black;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-align: center;
     padding-top: 40px;
@@ -16,12 +16,13 @@ header{
 }
 
 section#conteudo{
+    background-color: rgb(228, 210, 178);
     box-shadow: inset 0px 0px 20px 2px black; 
     
 }
 #conteudo>p{
     font-size: 3.5vh;
-    width: 90vh;
+    width: 80%;
     text-align: center;
     padding: 40px;
     border-radius: 10px;
@@ -43,11 +44,72 @@ section#img01{
     padding: 10vh 20vh;
     text-align: center;
 }
+p>.citacao{
+    font-size: 3vh;
+}
+article{
+    width: 100%;
+    background-image: linear-gradient(to bottom ,black, rgb(26, 26, 26));
+    box-shadow: inset 0px 0px 50px 0px black;
+    
+}
+article>h2{
+    font-size: 3.2vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 0px;
 
+}
+article>p{
+    font-size: 3.5vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5vh 0 ;
+}
+article>img{
+    padding-bottom: 5vh;
+    display: flex;
+    width: 50vh;
+    margin: auto;
+}
 
 footer{
     color: white;
     background-color: black;
     padding: 20px;
     text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px) {
+    #conteudo>p{
+        font-size: 2.5vh;
+        width: 80%;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin: auto;
+    
+    }
+
+    #img01>p{
+        background-color: rgba(0, 0, 0, 0.568);
+        color: white;
+        font-size: 20px;
+        padding: 5vh 2vh;
+        text-align: center;
+    }
+
+  
+    
+
 }
