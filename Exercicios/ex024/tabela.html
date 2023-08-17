@@ -26,15 +26,22 @@
         .num{
             text-align: right;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>
     <table>
+        <caption>População das Cidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="co">Estado</th>
+                <th scope="co" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -150,7 +157,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>203 062 512</strong></td>
             </tr>
 
