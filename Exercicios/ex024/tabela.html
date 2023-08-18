@@ -10,6 +10,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
+            position: relative;
             margin: auto;
             width: 500px;
             border-collapse: collapse;
@@ -23,6 +24,11 @@
         tbody > tr:nth-child(even){
             background-color: rgb(232, 232, 232);
 
+        }
+        thead >tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
         td,th{
             border: 1px solid rgb(0, 0, 0);
