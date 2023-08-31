@@ -9,12 +9,23 @@
     <form action="cadastro.php" method="get">
         <p>
            <label for="iano">Ano de Nas </label>
+           <input type="number" name="ano" id="iano" min="1900" max="2023" oninput="calcIdade()">
         </p>
+            <p>
+                <label for="iidade">Sua idade</label>
+                <output id="iidade">0</output>
+            </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
     </form>
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number (iano.value)
+        }
+    </script>
     
 </body>
 </html>
