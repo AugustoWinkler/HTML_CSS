@@ -44,20 +44,30 @@ body{
 }
 
 .wrapper .carousel{
+    scroll-snap-align: start ;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100%/3) - 12px);
     gap: 16px;
-    overflow: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+.carousel::-webkit-scrollbar{
+    display: none;
 
 }
-
 .carousel :where(.card,img){
     display: flex;
     align-items: center;
     justify-content: center;
     user-select: none;
     
+}
+.carousel .dragging{
+    scroll-snap-type: none;
+    scroll-behavior: auto; 
 }
 .carousel .dragging .card{
     cursor: grab;
